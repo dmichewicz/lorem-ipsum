@@ -1,0 +1,244 @@
+body {
+  width: 100vw;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2.5px;
+}
+
+p {
+  text-align: left;
+  line-height: 1.6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 200;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 4em;
+  margin-top: 10px;
+}
+
+h2 {
+  padding-left: 30px;
+  margin-top: 0;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.menu {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #dadada;
+  background-color: #ececec;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.slider {
+  height: auto;
+  min-height: 92%;
+  color: white;
+  background: url("1.jpg") center center fixed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+  from {
+    background: rgba(0, 0, 0, 1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.halfBlackFadeIn {
+  animation: fadeIn 1s;
+}
+
+.halfBlack {
+  height: auto;
+  min-height: 92vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes animatedContent {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
+
+.animatedContent {
+  animation-name: animatedContent;
+  animation-duration: 2s;
+}
+
+.content {
+  padding-top: 10%;
+  margin: auto;
+  height: auto;
+  width: 73%;
+  padding-bottom: 10%;
+}
+
+footer {
+  padding-left: 20px;
+  border-left: 1px solid white;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  font-weight: 200;
+  font-size: 1em;
+}
+
+#whiteLine {
+  width: 300px;
+  height: 2px;
+  background-color: white;
+}
+
+#greenLine {
+  height: 2px;
+  background-color: #00ca74;
+  margin-top: -2px;
+}
+
+@keyframes loading {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+.animatedLine {
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.dots {
+  height: 16px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots:hover {
+  cursor: default;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+#dotActive {
+  height: 14px;
+  width: 14px;
+}
+
+#button1 {
+  background: #00ca74;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #00ca74;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 13px;
+}
+
+#button1:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+#button2 {
+  background: transparent;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #00ca74;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+#button2:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.readMore {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .readMore {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .moreText {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  footer {
+    display: none;
+  }
+}
