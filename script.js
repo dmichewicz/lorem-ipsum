@@ -82,6 +82,11 @@ const slideChanger = (slideNumber) => {
 };
 
 
+//preloading 
+    slider.style.background = 'url("1.jpg") no-repeat center center fixed';
+    slider.style.background = 'url("2.jpg") no-repeat center center fixed';
+    slider.style.background = 'url("3.jpg") no-repeat center center fixed';
+
 
 //slides
 
