@@ -167,6 +167,7 @@ footer {
   border-radius: 5px;
   box-shadow: none;
   font-size: 13px;
+  margin-bottom: 5px;
 }
 
 #button1:hover {
